@@ -6,12 +6,12 @@ const View = () => {
     const [users, setUsers] = useState([])
 
     useEffect(()=>{
-        axios.get('http://localhost:3300/')
+        axios.get('https://todo-backend-zl57.onrender.com/')
         .then(reurn=>setUsers(reurn.data))
         .catch(error=>console.log(error))
     },[])
     const handleDelete = (id)=>{
-        axios.delete(`http://localhost:3300/delete/${id}`)
+        axios.delete(`https://todo-backend-zl57.onrender.com/delete/${id}`)
     }
     return (
         <div className='d-flex justify-content-center align-items-center bg-secondary vh-100'>

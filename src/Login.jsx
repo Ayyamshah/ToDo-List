@@ -10,7 +10,7 @@ const Login = () => {
     const handle =(e)=>{
         e.preventDefault()
 
-        axios.post('http://localhost:3300/login',{email,password})
+        axios.post('https://todo-backend-zl57.onrender.com/login',{email,password})
         .then(result=>{
             console.log(result)
             if(result.data === "success"){

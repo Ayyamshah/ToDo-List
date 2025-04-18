@@ -10,7 +10,7 @@ const Create = () => {
     const addhandler = (e) =>{
         e.preventDefault()
 
-        axios.post('http://localhost:3300/add',{name,date})
+        axios.post('https://todo-backend-zl57.onrender.com/add',{name,date})
         .then(result=>{
           console.log(result.data);
           navigate('/view')

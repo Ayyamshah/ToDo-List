@@ -13,7 +13,7 @@ const SingUp = () => {
     const handleAdd = (e)=>{
         e.preventDefault()
 
-        axios.post('http://localhost:3300/signup',{name,email,password})
+        axios.post('https://todo-backend-zl57.onrender.com/signup',{name,email,password})
         .then(result=>{
             console.log(result);
             navegate('/login')
